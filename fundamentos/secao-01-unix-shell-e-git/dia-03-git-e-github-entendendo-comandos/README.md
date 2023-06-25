@@ -1,4 +1,4 @@
-# - [x] DIA 03 - **GIT e GITHUB**
+- [x] DIA 03 - **GIT e GITHUB**
 
 O objetivo dos exercícios de hoje foi treinar alguns comandos e conceitos fundamentais para se trabalhar com **GIT** e **GITHUB**.
 

@@ -12,7 +12,9 @@ Esse exercício consiste em criar e clonar um repositório já com um README.md.
 - Fiz algumas descrições dos exercícios que foram propostos pela `Trybe`.
 - Utilizei o comando `git add` para realizar a inclusão ou modificação do arquivo no diretório local.
 - Utilizei o comando `git commit -m "mensagem"` para informar as alterações que foram realizadas e criar uma versão do projeto.
-
+- Utilizei o comando `git push -u origin nome-da-branch` para deixar a branch acessível remotamente e enviar as alterações realizadas.
+- Realizei o `merge` no `GitHub`.
+- Utilizei o comando `git pull` para trazer as alterações remotas da branch atual.
 
 
 

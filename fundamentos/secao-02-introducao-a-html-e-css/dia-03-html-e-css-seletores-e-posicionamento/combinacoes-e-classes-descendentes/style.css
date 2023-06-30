@@ -30,3 +30,22 @@ li em {
 .linguagens li:nth-child(-n + 3){
     color: blue;
 }
+
+.bg-rosa {
+    background-color: palevioletred;
+}
+
+#aliados li a[href*="stackoverflow"]:hover {
+    color: orange;
+  }
+  #aliados li a[href*="w3schools"]:hover {
+    color: green;
+  }
+  #aliados li a[href*="mozilla"]:hover {
+    color: black;
+  }
+  #aliados li a[href*="devdocs"]:hover {
+    color: yellow;
+  }
+  #aliados li a[href*="trybe"]:hover {
+    color: green;}

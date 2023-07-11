@@ -100,3 +100,27 @@ const basket = [
   "Abacate",
   "Uva",
 ];
+
+const result = {};
+
+for (let index = 0; index < basket.length; index += 1) {
+  let fruit = basket[index];
+  if (!result[fruit]) {
+    result[fruit] = 1;
+  } else {
+    result[fruit] += 1;
+  }
+}
+
+const entries = Object.entries(result);
+
+let newArray = [];
+
+for (let index = 0; index < entries.length; index += 1) {
+  if (entries[index][1] > 1) {
+    newArray.push(`${entries[index][1]} ${entries[index][0]}s`);
+  } else {
+    newArray.push(`${entries[index][1]} ${entries[index][0]}`);
+  }
+}
+console.log(`Sua cesta possui: ${newArray.join(", ")}.`);

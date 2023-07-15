@@ -56,6 +56,55 @@
     </style>
   </head>
   <body>
-    <script></script>
+    <script>
+      let title = document.createElement("h1");
+      title.innerText = "TrybeTrip - Agência de Viagens";
+      document.body.appendChild(title);
+
+      let main = document.createElement("main");
+      main.className = "main-content";
+      document.body.appendChild(main);
+
+      let section = document.createElement("section");
+      section.className = "center-content";
+      main.appendChild(section);
+
+      let paragraph = document.createElement("p");
+      paragraph.innerText = "Me chamo Miguel Sabino de Souza";
+      section.appendChild(paragraph);
+
+      let secondSection = document.createElement("section");
+      secondSection.className = "left-content";
+      main.appendChild(secondSection);
+      let image = document.createElement("img");
+      image.src = "https://picsum.photos/200";
+      image.className = "small-image";
+      secondSection.appendChild(image);
+
+      let thirdSection = document.createElement("section");
+      thirdSection.className = "right-content";
+      main.appendChild(thirdSection);
+
+      let unorderedList = document.createElement("ul");
+
+      for (let index = 1; index <= 10; index += 1) {
+        let list = document.createElement("li");
+        list.innerText += `${index}`;
+        thirdSection.appendChild(list);
+      }
+
+      for (let index = 1; index <= 3; index += 1) {
+        let titleh3 = document.createElement("h3");
+        main.appendChild(titleh3);
+        titleh3.className = "description";
+      }
+
+      title.className = "title";
+      main.removeChild(secondSection);
+      thirdSection.style.marginRight = "auto";
+      section.style.backgroundColor = "green";
+      thirdSection.lastElementChild.remove();
+      thirdSection.lastElementChild.remove();
+    </script>
   </body>
 </html>
